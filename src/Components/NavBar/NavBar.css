@@ -1,0 +1,136 @@
+.gpt__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.gpt__navabr-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gpt__navbar-links_logo {
+    margin-right: 4rem;
+}
+
+.gpt__navbar-links_logo img {
+    width: 60px;
+    height: 16px;
+}
+
+.gpt__navbar-links_container {
+    display: flex;
+}
+
+.gpt__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gpt__navbar-menu_container p,
+.gpt__navbar-sign p,
+.gpt__navbar-links_container p {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+.gpt__navbar-sign button {
+ padding: 0.5rem 1rem;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.gpt__navbar-menu {
+    display: none;
+    margin-left: 1rem;
+    position: relative;
+}
+.gpt__navbar-menu svg {
+cursor: pointer;
+}
+.gpt__nav-menu_contanier {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+.gpt__nav-menu_contanier p {
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+.gpt__navbar-menu_container-link-sign{
+    display: none;
+}
+
+.gpt__navbar-menu button {
+    padding: 0.5rem 1rem;
+       background: #FF4820;
+       font-family: var(--font-family);
+       font-weight: 500;
+       font-size: 18px;
+       border: none;
+       border-radius: 5px;
+       color: #ffffff;
+       border: none;
+       outline: none;
+       cursor: pointer;
+   }
+
+@media screen and (max-width: 1050px){
+    .gpt__navbar-links_container{
+        display: none;
+    }
+    .gpt__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .gpt__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .gpt__navbar {
+        padding: 2rem;
+    }
+    .gpt__navbar-sign{
+        display: none;
+    }
+    .gpt__nav-menu_contanier{
+        top:20px
+    }
+    .gpt__navbar-menu_container-link-sign{
+        display: block;
+    }
+}
